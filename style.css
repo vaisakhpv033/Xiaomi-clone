@@ -1,0 +1,563 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(247, 247, 247);
+}
+
+
+/* navbar */ 
+
+nav{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 1px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 25px;
+    max-width: 100%;
+}
+
+.nav-brand{
+    margin-right: 2%;
+}
+
+.nav-brand .logo {
+    height: 30px;
+    border-radius: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #191919;
+}
+
+.nav-links a:hover{
+    border-bottom: 1.6px solid rgb(255, 105, 0);
+    color: rgb(255,105,0);
+}
+
+.header-space{
+    flex: auto;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.nav-icons .icon {
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.carousel{
+    display: flex;
+    height: 570px;
+
+}
+.carousel-image{
+    background-image: url("carousel-image.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-section{
+    padding-left: 5%;
+    max-width: 30%;
+    padding-bottom: 3%;
+}
+.carousel-title{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+    color: rgb(25, 25, 25);
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.carousel-subtitle{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 2% 0;
+}
+
+.learn-more-button{
+    margin: 0;
+    background-color: #191919;
+    color: rgb(255, 255, 255);
+    column-gap: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.learn-more-button:hover{
+    background-color: #333333 ;
+    cursor: pointer;
+}
+
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Featured products section */
+.title h1{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 48px;
+}
+
+.featured-links a{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+#fixed{
+    padding-bottom: 20px;
+    border-bottom: 1.6px solid rgb(255, 105, 0);
+    color: rgb(255,105,0);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.featured-incontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 720px;
+    margin: 3%;
+    margin-top:20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    background-color: white;
+    
+}
+
+.featured{
+    display: flex;
+    cursor: pointer;
+}
+
+.card1{
+    width: 60%;
+    background-image: url(Xiaomi_anniversary_sale.webp);
+    background-size: cover;
+    background-position: center;
+    transition: 3s;
+}
+
+.card1:hover{
+    transform: scale(1.02);
+    
+}
+.card2{
+    width: 40%;
+    background-color: #fbfafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-content{
+    text-align: center;
+}
+
+.featured-content h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 0;
+}
+
+.featured-content h3{
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.5px;
+}
+
+.featured-content h5{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.featured-button{
+    display: none;
+}
+
+.featured:hover{
+    .featured-button{
+        display: block;
+    }
+}
+
+.exclusive-container{
+    margin: 0 30px;
+    width: 96%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.exclusive-cards{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    height: 464px;
+    width: 444px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img{
+    height: 321px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-title h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+.card-title h4{
+    display: block;
+    font-size: 16px;
+    font-weight:400;
+    color: rgb(25, 25, 25);
+    line-height: 20px;
+}
+
+.exclusive-button{
+    display: none;
+}
+
+.card:hover{
+    .exclusive-button{
+        display: block;
+    }
+    .card-title h4{
+        display: none;
+    }
+}
+
+
+
+/* Explore section */
+.explore-xiaomi-container{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.explore-xiaomi-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.explore-xiaomi-card{
+    margin:10px;
+    min-width: 664px;
+    height:auto;
+    background-color:white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.explore-xiaomi-card-image img{
+    width: 100%;
+    height:330px;
+    border-radius: 15px;
+}
+
+.explore-xiaomi-card-title{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.explore-xiaomi-card-title a{
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.explore-xiaomi-button{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.explore-xiaomi-button button{
+    display: none;
+}
+
+.hover1:hover{
+    .explore-xiaomi-button button{
+        display: block;
+    }
+}
+
+.hover2:hover{
+    .explore-xiaomi-button button{
+        display: block;
+    }
+}
+
+.hover3:hover{
+    .explore-xiaomi-button button{
+        display: block;
+    }
+}
+
+
+
+
+/* Xiaomi Support Section */
+.explore-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.explore-card{
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+
+.explore-card img{
+    width: 80px;
+    height: 80px;
+    filter: invert(45%) sepia(14%) saturate(1%) hue-rotate(0deg) brightness(90%) contrast(100%);
+    
+}
+
+.hover-color:hover {
+    img{
+    filter: invert(66%) sepia(100%) saturate(2368%) hue-rotate(346deg) brightness(101%) contrast(103%);
+}
+    p,h1{
+        color: rgb(255, 105, 0);
+    }
+}
+.explore-card p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(25, 25, 25);
+    padding:0 14px;
+}
+
+
+/* Footer section */
+.footer{
+    background-color: #191919;
+    margin-top: 100px;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+.footer-section1{
+    width: 70%;
+}
+
+#footer-table{
+    width: 100%;
+}
+
+.footer-header-row th{
+    color: white;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding: 20px 5px;
+}
+
+.footer-data-row td{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #898989;
+    font-weight: 500;
+    text-align: left;
+    font-size: 1rem;
+    padding: 8px 5px;
+}
+
+.footer-data-row td:hover{
+    cursor: pointer;
+}
+
+.footer-section2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+}
+
+.footer-connect-us{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-logos{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.footer-circle{
+    margin-right: 10px;
+    height:30px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.footer-logos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.footer-input input{
+    margin-top: 10px;
+    margin-bottom:10px;
+    width: 380px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border: 1px solid #898989;
+    border-radius: 15px;
+}
+
+.footer-images{
+    display: flex;
+    flex-direction: column;
+    width: 408px;
+    border: 1px solid #898989;
+    border-radius: 16px;
+    margin-top: 15px;
+}
+
+.footer-qr{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #898989;
+    padding: 16px;
+    
+}
+
+.footer-qr h1{
+    padding-left: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.footer-qr p{
+    padding-left: 15px;
+    color: rgb(137, 137, 137);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 10px;
+    
+}
+
+.footer-play-button{
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+}
+
+.footer-play-button h1{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 8px;
+}
+
+.footer-end{
+    border-top: 1px solid #898989;
+    margin:4px 40px;
+    margin-bottom: 0;
+    padding:10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-end p{
+    color: white;
+}
+
+.footer-end-block2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    flex-grow:1;
+    justify-content: space-between;
+}
+
